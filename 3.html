@@ -1,0 +1,82 @@
+<html>
+<head>
+<style>
+*
+{
+padding:0px;
+margin:0px;
+}
+body
+{
+background:url('miki1.jpg');
+background-size:cover;
+}
+#outer
+{
+height:750px;
+width:100%;
+background:rgba(0,0,0,.4);
+font-size:50px;
+text-align:center;
+color:white;
+}
+#login
+{
+height:300px;
+width:500px;
+background:rgba(0,0,0,.5);
+margin:20px auto;
+color:white;
+font-size:18px;
+text-align:left;
+padding:30px;
+transition:all ease is;
+}
+#login:hover
+{
+transform:scale(1.1);
+transition:all ease is;
+background:linear-gradient(45deg,rgba(0,0,0,.4),rgba(255,65,0,.5));
+}
+.txt
+{
+height:45px;
+width:100%;
+margin-bottom:20px;
+background:transparent;
+color:white;
+}
+.btn
+{
+height:45px;
+width:100%;
+background:orange;
+border:none;
+color:white;
+font-size:18px;
+}
+::placeholder
+{
+color:orange;
+font-size:15px;
+}
+</style>
+</head>
+<body>
+<div id="outer">
+<br/><br/><br/>
+Welcome to
+<b style="color:orange;">Login</b>
+<div id="login">
+<fieldset style="padding:25px;">
+<legend>LOGIN HERE...</legend>
+<form>
+User id<br/><input type="text" class="txt" placeholder="USER ID..."/><br/>
+Password<br/><input type="password" class="txt" placeholder="Password..."/><br/>
+<input type="submit"class="btn" value="Login" />
+</form>
+</fieldset>
+</div>
+</div>
+</body>
+</html>

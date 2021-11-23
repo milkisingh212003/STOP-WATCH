@@ -1,0 +1,91 @@
+<html>
+<head>
+<style>
+body
+{
+background:black;
+padding-top:150px;
+}
+button
+{
+background:navy;
+height:50px;
+width:150px;
+border:none;
+font-size:25px;
+color:white;
+font-weight:bold;
+text-align:center;
+}
+#box
+{
+height:300px;
+width:900px;
+margin:0px auto;
+}
+.c
+{
+height:210px;
+width:210px;
+float:left;
+background:navy;
+margin:25px;
+box-shadow:0px 0px 15px 15px black inset;
+border:20px solid white;
+font-size:90px;
+font-family:impact;
+line-height:210px;
+text-align:center;
+color:white;
+text-shadow:5px 5px 5px black;
+}
+</style>
+<script>
+var ss=0,mm=0;hh=0;
+function demo()
+{
+var a=document.getElementById("h");
+var b=document.getElementById("m");
+var c=document.getElementById("s");
+ss++;
+if(ss==60)
+{
+mm++
+ss=0;
+if(mm=60)
+{
+hh++;
+mm=0;
+}
+}
+a.innerText=hh;
+b.innerText=mm;
+c.innerText=ss;
+}
+function start()
+{
+x=window.setInterval("demo()",1000)
+}
+function stop()
+{
+window.clearInterval(x);
+}
+function refresh()
+{
+window.location.href="5.html";
+}
+</script>
+</head>
+<body>
+<div id="box">
+<div class="c" id="h">HH</div>
+<div class="c" id="m">MM</div>
+<div class="c"id="s">SS</div>
+</div>
+<center>
+<button onclick="start()">START</button>
+<button onclick="stop()">STOP</button>
+<button onclick="refresh()">RESET</button>
+</center>
+</body>
+</html>
